@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:http="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css"/><meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/HomePageWhenLogin.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+</head>
+
+<body ng-app = "homePage"  style="background-color: #f5f8fa">
+
+<div ng-controller = "searchCntr">
+
+    <% include NavBar.ejs %>
+</div>
+
+<div class="container-fluid" id = "welcome" ng-controller = "profile">
+    <div class="col-sm-3" id="panelsize">
+        <div class="panel panel-primary" id="toppanel">
+            <div id="panelHeading" class="panel-heading">
+            </div>
+            <div id="" class="panel-body">
+                <img id="profile_pic" src="../images/proicon.png" class="img-rounded"
+                      width="70" height="70" />
+
+                <a href="userInfoPage"> {{result.First_Name }}&nbsp{{ result.Last_Name}}</a>
+
+
+                <div class="container" id = "badges">
+                    <a href="#">Followers <span class="label label-primary">{{ result.followers_count }}</span></a>
+                    <a href="#">Following <span class="label label-primary">{{ result.following_count }}</span></a>
+                    <a href="#">Tweets <span class="label label-primary">{{ result.tweet_count}}</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  ng-controller = "HomePageCntr">
+    <div class="container-fluid" id="tweetfield">
+        <div class="" id="txt">
+            <form>
+                <textarea class="" rows="1" cols="50" ng-model="tweetValue" maxlength="140" placeholder = "What's Happening?" onfocus="this.rows=5;" style="resize:none;" onblur="this.rows=1;" id="txta"></textarea>
+                <button type="button" value="Tweet" id="tweet" ng-click = "insertTweet()" >Tweet</button>
+            </form>
+        </div>
+    </div>
+    <div ng-repeat = "value in data" >
+        <div id = "retweetComment" align="right" ng-show="value.Retweet_User != '0' "> <b> <i> @ {{value.Retweet_User}}:Retweeted</i> </b> </div>
+        <a ng-click = "goToOtherProfile(value.First_Name,value.Last_Name,value.Twitter_Handle)"> <div class = "userInfo"><span id ="name">{{ value.First_Name}} {{value.Last_Name }}</span><span id = "handle"> @{{value.Twitter_Handle}}</span></a>
+
+        <div id="comments"> {{ value.Comments}} </div>
+
+        <div id = "retweetButton" ng-show  = "value.Twitter_Handle != value.Original_Handle"><a ng-click = "retweetdata(value.Comments,value.Twitter_Handle)">
+                <img src="../images/retweet.png" /></a></div>
+
+
+       </div>
+    </div>
+</div>
+<script src = "javascripts/HomePageAfterLoginController.js"></script>
+</body>
+</html>

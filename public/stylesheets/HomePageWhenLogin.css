@@ -1,0 +1,170 @@
+#htext:hover{
+    color: #1D7FA2;
+}
+#icon{
+    padding-top: 10px;
+    margin-left : 600px;
+}
+#Home:hover{
+    background-color: #ffffff;
+}
+#Home{
+    background-color: #ffffff;
+}
+#globaltweet:hover{
+    background-color: #4169E1 ;
+}
+#globaltweet {
+    color: #fff;
+    cursor: pointer;
+    height: 32px;
+    margin-top: 7px;
+    margin-right: 50px;
+    opacity: 1;
+    -ms-filter: "alpha(opacity=80)";
+    padding: 0 7px 0 8px;
+    background-color: #1D7FA2;
+    background: rgba(0,132,180,.8);
+    border-radius: 10px;
+}
+#srch-term
+{
+    margin-right: 50px;
+    border-radius: 15px;
+}
+#profIcon
+{
+    overflow: hidden;
+    margin-right: 25px;
+}
+#btn
+{
+    margin-right: 5px;
+    padding-right: 0px;
+}
+#Home
+{
+    margin-left: 50px;
+}
+#himg
+{
+
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+a {
+    color:#1D7FA2;
+}
+
+#panelHeading{
+    background-color: #1D7FA2;
+    height: 95px;
+}
+
+#profile_pic{
+    margin-top: -40px;
+}
+
+#panelsize{
+    top:30px;
+    right:24px;
+    margin-top: 37px;
+}
+#profile_pic
+{
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+.navbar{
+    border-bottom: dashed;
+    border-bottom-color: #1D7FA2;
+}
+#txt{
+    background-color:#1D7FA2;
+    margin-right: 550px;
+    margin-left: 307px;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 538px;
+    margin-top: -177px;
+}
+
+
+.expand {
+    height: 1em;
+    width: 50%;
+    padding: 3px;
+}
+#tweet{
+
+    height: 25px;
+    margin-top: 7px;
+    margin-right: 50px;
+    margin-left: 375px;
+    opacity: 1;
+    -ms-filter: "alpha(opacity=80)";
+    padding: 0 7px 0 8px;
+    border-radius: 10px;
+    color: floralwhite;
+    cursor: pointer;
+}
+#tweet:hover{
+    background-color: #1D7FA2;
+
+}
+#txta{
+    border-color: #1D7FA2;
+
+    border-style: solid;
+    width: 463px;
+}
+
+.userInfo{
+    padding-right: 50px;
+    width: 538px;
+    margin-top: 10px;
+    display: block;
+    height: 100px;
+    border-color: #e1e8ed;
+    margin-bottom: -9px;
+    line-height: 52px;
+    word-wrap: break-word;
+    background-color: white;
+    margin-right: 550px;
+    margin-left: 316px;
+    padding-top: 0px;
+    padding-left: 50px;
+
+}
+#comments{
+    margin-top: -33px;
+    border-color: #1D7FA2;
+}
+#userInfo{
+    margin-top: 20px;
+}
+#name{
+    font-weight: bold;
+    color: #292f33;
+}
+#handle{
+  color: #b1bbc3;
+}
+
+#retweetComment{
+    margin-right: 900px;
+    margin-top: 20px;
+    color: #1D7FA2;
+}
+
+#retweetButton{
+    height: 10px;
+    width: 10px;
+    margin-top: -20px;
+    margin-left:425px ;
+}

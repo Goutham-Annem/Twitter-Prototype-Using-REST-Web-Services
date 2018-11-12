@@ -1,0 +1,58 @@
+#window{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 280px;
+}
+#innerWindow{
+    background-color: #1D7FA2;
+    width: 300px;
+    height: 100px;
+}
+#innerProfilePic{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-top: -39px;
+    margin-left: 20px;
+}
+#innermostPic{
+    background-color: #0084B4;
+    width: 60px;
+    height: 55px;
+    border-radius: 5px;
+    margin-top: -65px;
+    margin-left: 25px;
+    padding-bottom: 65px;
+}
+
+#name{
+    margin-top: 170px;
+    margin-left: 90px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+#hash
+{
+    margin-top: 56px;
+}
+
+#follow{
+    margin-left: 150px;
+    margin-top: 25px;
+    background-color: #1D7FA2;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+#handle{
+    color: #b1bbc3;
+    font-size: 16px;
+    margin-left: 110px;
+    margin-top: -20px;
+}
