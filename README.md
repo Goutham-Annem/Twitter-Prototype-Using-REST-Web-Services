@@ -1,6 +1,6 @@
 # Twitter-Prototype-Using-REST-Web-Services
 This application resembles actual Twitter where user can perform following operations:
-Goal: Create prototype which demonstrates the use of REST web services. This application should resemble actual Twitter where user can perform following operations.
+
 
 1.	SignUp: Create account for valid users with proper validation of input data.
 2.	Login: Login from homepage and loading the respective user home page.
